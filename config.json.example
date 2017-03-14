@@ -1,0 +1,55 @@
+{
+    "settings": {
+        "email": {
+            "enabled": true,
+            "cooldown_m": 60,
+            "alert_list": [
+                "myemail@email.com"
+            ],
+            "smtp_mailer": {
+                "domain": "unused4gmail",
+                "server": "smtp.gmail.com",
+                "security": "tls",
+                "port": 587,
+                "login": "mymailer.replaceme@gmail.com",
+                "from": "DealMon",
+                "password": "mailerpassword",
+                "subject_prefix": "DealMon: "
+            }
+        },
+        "global_product_settings": {
+            "check_interval_m": 720,
+            "check_interval_jitter_m": 4,
+            "rules": {
+                "stock": "available",
+                "zip_code": 11111
+            }
+        }
+    },
+    "products": {
+        "Patriot 16GB 2x8 2400": {
+            "link": "http://www.frys.com/product/8911983",
+            "check_interval_m": 60,
+            "rules": {
+                "price_below_usd": 80.00,
+                "stock": "available",
+                "zip_code": 94085,
+                "stores": [
+                    "Sunnyvale"
+                ]
+            }
+        },
+        "Patriot 16GB 4x4 2400": {
+            "link": "http://www.frys.com/product/8291376",
+            "check_interval_m": 60,
+            "rules": {
+                "price_below_usd": 60.00,
+                "stock": "available",
+                "zip_code": 75074,
+                "stores": [
+                    "Plano"
+                ]
+            }
+        }
+    }
+}
